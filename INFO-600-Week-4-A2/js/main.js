@@ -4,16 +4,16 @@ $(document).ready(function() {
 		var fullName;
 		var major;
 		var startYear;
-		fullName= $("#fName").val();
+		fullName= $("#fullName").val();
 		major = $("#major").val();
-		startYear= $("#year").val();
+		startYear= $("#startYear").val();
 		var myDate=new Date();
 		var startYearInt= parseInt(startYear);
 
 		//check for empty value in field fName
 		if (fullName=="") {
 			window.alert("Please indicate the full name");
-			document.getElementById("fName").focus();
+			document.getElementById("fullName").focus();
 			return;
 		}
 		//check for empty value in field major
@@ -44,7 +44,7 @@ $(document).ready(function() {
 		}
 		else{
 			window.alert("Unacceptable Year");
-			document.getElementById("year").select();
+			document.getElementById("startYear").select();
 			return;
 		}
 
