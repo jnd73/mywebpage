@@ -40,7 +40,10 @@ $(document).ready(function() {
 		{
 			var message = "<p> "+ hours + ":"+ minutes+ " - "+ fullName+", "+major +", "+startYearInt+"</p>";
 			$("#records").append(message);
-			myform.reset();
+			$("#fullName").val("");
+			$("#major").val("");
+			$("#startYear").val("");
+			//myform.reset();
 		}
 		else{
 			window.alert("Unacceptable Year");
