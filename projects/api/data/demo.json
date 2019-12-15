@@ -1,0 +1,13 @@
+{
+    "trackinfo": {
+        "track": "Indianapolis Motor Speedway"
+    },
+    "sessioninfo": {
+        "date": "0001-01-01",
+        "timeStart": "01:01",
+        "timeEnd": "01:01",
+        "startLap": 1,
+        "endLap": 1
+    },
+    "participants": {}
+}

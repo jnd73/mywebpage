@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<meta charset="UTF-8">
+    <title>API Testing</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <script src="js/main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+
+	<form enctype="multipart/form-data">
+	<div class="form-popup1" id="myForm">
+  
+    <h2>Track Information</h2>
+    <div class="wcleft">
+    Track:
+    <select id="track" name="track">
+        <option value="Indianapolis Motor Speedway">Indianapolis Motor Speedway</option>
+    </select>
+    Date:
+    <input type="date" id="date"><br>
+    Start Time:
+    <input type="time" id="timeStart"><br>
+    End Time:
+    <input type="time" id="timeEnd"><br>
+    Starting Lap:
+    <input type="text" id="startLap"><br>
+    Ending Lap:<input type="text" id="endLap"><br>
+
+   	# Participants:<input type="text" id="participants"><br>
+
+	   	<table style="table, th, td {
+  border: 5px solid black;
+}">
+	  <tr>
+	    <th>Car #</th>
+	    <th>Rank</th>
+	    <th>Time Behind Leader</th>
+	    <th>Time Behind Pre</th>
+	  </tr>
+	  <tr>
+	    <td><input type="text" id="carNumber1" size="5"></td>
+	    <td><input type="text" id="carRank1" size="5"></td>
+	    <td><input type="text" id="Tbhl-minutes1" size="2" placeholder="minutes">:<input type="text" id="Tbhl-seconds1" size="2" placeholder="seconds">:<input type="text" id="Tbhl-milliseconds1" size="5" placeholder="milliseconds"></td>
+	    <td><input type="text" id="Tbhp-minutes" size="2" placeholder="minutes">:<input type="text" id="Tbhp-seconds" size="2" placeholder="seconds">:<input type="text" id="Tbhp-milliseconds" size="5" placeholder="milliseconds"></td>
+	  </tr>
+	  <tr>
+	    <td><input type="text" id="carNumber2" size="5"></td>
+	    <td><input type="text" id="carRank2" size="5"></td>
+	    <td><input type="text" id="Tbhl-minutes2" size="2" placeholder="minutes">:<input type="text" id="Tbhl-seconds2" size="2" placeholder="seconds">:<input type="text" id="Tbhl-milliseconds2" size="5" placeholder="milliseconds"></td>
+	    <td><input type="text" id="Tbhp-minutes2" size="2" placeholder="minutes">:<input type="text" id="Tbhp-seconds2" size="2" placeholder="seconds">:<input type="text" id="Tbhp-milliseconds2" size="5" placeholder="milliseconds"></td>
+	  </tr>
+	  <tr>
+	    <td><input type="text" id="carNumber3" size="5"></td>
+	    <td><input type="text" id="carRank3" size="5"></td>
+	    <td><input type="text" id="Tbhl-minutes3" size="2" placeholder="minutes">:<input type="text" id="Tbhl-seconds3" size="2" placeholder="seconds">:<input type="text" id="Tbhl-milliseconds3" size="5" placeholder="milliseconds"></td>
+	    <td><input type="text" id="Tbhp-minutes3" size="2" placeholder="minutes">:<input type="text" id="Tbhp-seconds3" size="2" placeholder="seconds">:<input type="text" id="Tbhp-milliseconds3" size="5" placeholder="milliseconds"></td>
+	  </tr>
+	  <tr>
+	    <td><input type="text" id="carNumber4" size="5"></td>
+	    <td><input type="text" id="carRank4" size="5"></td>
+	    <td><input type="text" id="Tbhl-minutes4" size="2" placeholder="minutes">:<input type="text" id="Tbhl-seconds4" size="2" placeholder="seconds">:<input type="text" id="Tbhl-milliseconds4" size="5" placeholder="milliseconds"></td>
+	    <td><input type="text" id="Tbhp-minutes4" size="2" placeholder="minutes">:<input type="text" id="Tbhp-seconds4" size="2" placeholder="seconds">:<input type="text" id="Tbhp-milliseconds4" size="5" placeholder="milliseconds"></td>
+	  </tr>
+	  <tr>
+	    <td><input type="text" id="carNumber5" size="5"></td>
+	    <td><input type="text" id="carRank5" size="5"></td>
+	    <td><input type="text" id="Tbhl-minutes5" size="2" placeholder="minutes">:<input type="text" id="Tbhl-seconds5" size="2" placeholder="seconds">:<input type="text" id="Tbhl-milliseconds5" size="5" placeholder="milliseconds"></td>
+	    <td><input type="text" id="Tbhp-minutes5" size="2" placeholder="minutes">:<input type="text" id="Tbhp-seconds5" size="2" placeholder="seconds">:<input type="text" id="Tbhp-milliseconds5" size="5" placeholder="milliseconds"></td>
+	  </tr>
+	  <tr>
+	    <td><input type="text" id="carNumber6" size="5"></td>
+	    <td><input type="text" id="carRank6" size="5"></td>
+	    <td><input type="text" id="Tbhl-minutes6" size="2" placeholder="minutes">:<input type="text" id="Tbhl-seconds" size="2" placeholder="seconds">:<input type="text" id="Tbhl-milliseconds6" size="5" placeholder="milliseconds"></td>
+	    <td><input type="text" id="Tbhp-minutes6" size="2" placeholder="minutes">:<input type="text" id="Tbhp-seconds6" size="2" placeholder="seconds">:<input type="text" id="Tbhp-milliseconds6" size="5" placeholder="milliseconds"></td>
+	  </tr>
+	  <tr>
+	    <td><input type="text" id="carNumber7" size="5"></td>
+	    <td><input type="text" id="carRank7" size="5"></td>
+	    <td><input type="text" id="Tbhl-minutes7" size="2" placeholder="minutes">:<input type="text" id="Tbhl-seconds7" size="2" placeholder="seconds">:<input type="text" id="Tbhl-milliseconds7" size="5" placeholder="milliseconds"></td>
+	    <td><input type="text" id="Tbhp-minutes7" size="2" placeholder="minutes">:<input type="text" id="Tbhp-seconds7" size="2" placeholder="seconds">:<input type="text" id="Tbhp-milliseconds7" size="5" placeholder="milliseconds"></td>
+	  </tr>
+	  <tr>
+	    <td><input type="text" id="carNumber8" size="5"></td>
+	    <td><input type="text" id="carRank8" size="5"></td>
+	    <td><input type="text" id="Tbhl-minutes8" size="2" placeholder="minutes">:<input type="text" id="Tbhl-seconds8" size="2" placeholder="seconds">:<input type="text" id="Tbhl-milliseconds8" size="5" placeholder="milliseconds"></td>
+	    <td><input type="text" id="Tbhp-minutes8" size="2" placeholder="minutes">:<input type="text" id="Tbhp-seconds8" size="2" placeholder="seconds">:<input type="text" id="Tbhp-milliseconds8" size="5" placeholder="milliseconds"></td>
+	  </tr>
+	  <tr>
+	    <td><input type="text" id="carNumber9" size="5"></td>
+	    <td><input type="text" id="carRank9" size="5"></td>
+	    <td><input type="text" id="Tbhl-minutes9" size="2" placeholder="minutes">:<input type="text" id="Tbhl-seconds9" size="2" placeholder="seconds">:<input type="text" id="Tbhl-milliseconds9" size="5" placeholder="milliseconds"></td>
+	    <td><input type="text" id="Tbhp-minutes9" size="2" placeholder="minutes">:<input type="text" id="Tbhp-seconds9" size="2" placeholder="seconds">:<input type="text" id="Tbhp-milliseconds9" size="5" placeholder="milliseconds"></td>
+	  </tr>
+	  <tr>
+	    <td><input type="text" id="carNumber10" size="5"></td>
+	    <td><input type="text" id="carRank10" size="5"></td>
+	    <td><input type="text" id="Tbhl-minutes10" size="2" placeholder="minutes">:<input type="text" id="Tbhl-seconds10" size="2" placeholder="seconds">:<input type="text" id="Tbhl-milliseconds10" size="5" placeholder="milliseconds"></td>
+	    <td><input type="text" id="Tbhp-minutes10" size="2" placeholder="minutes">:<input type="text" id="Tbhp-seconds10" size="2" placeholder="seconds">:<input type="text" id="Tbhp-milliseconds10" size="5" placeholder="milliseconds"></td>
+	  </tr>
+	  
+	</table>
+
+
+
+
+
+
+
+
+	<br>
+    <input type="submit" id="submit" name="submit" class="btn cancel">
+	</div>
+
+</div>
+<div id="output">
+	<p id="display"></p>
+	
+</div>
+
+</body>
+</html>

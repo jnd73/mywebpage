@@ -1,0 +1,17 @@
+{
+    "trackinfo": [
+        {
+            "track":
+        }
+    ]
+
+    "sessioninfo":[
+	{
+	    "date":,
+	    "timeStart":,
+	    "timeEnd":,
+	    "startLap":,
+	    "endLap":
+	}
+     ]
+}
